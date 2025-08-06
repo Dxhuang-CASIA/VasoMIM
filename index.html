@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>VasoMIM</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+    svg: { fontCache: 'global' }
+  };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">VasoMIM: Vascular Anatomy-Aware Masked Image Modeling for Medical Image Segmentation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=01Pcm-AAAAAJ&view_op=list_works" target="_blank">De-Xing Huang</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=e9_7q0gAAAAJ&hl=en" target="_blank">Xiao-Hu Zhou</a><sup>1,2*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=_oQTTCAAAAAJ&hl=en" target="_blank">Mei-Jiang Gui</a><sup>1,2</sup>,</span>
+                    <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=GfP72-0AAAAJ&hl=en" target="_blank">Xiao-Liang Xie</a><sup>1,2</sup>,</span>
+                    <span class="author-block">
+                    Shi-Qi Liu</a><sup>1,2</sup>,</span>
+                    <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=DSYSUjkAAAAJ&hl=en&oi=ao" target="_blank">Shuang-Yi Wang</a><sup>1,2</sup>,</span>
+                    <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=S3oniHQAAAAJ&hl=en" target="_blank">Tian-Yu Xiang</a><sup>1,2</sup>,</span>
+                    <span class="author-block">
+                    Rui-Ze Ma</a><sup>1,3</sup>,</span>
+                    <span class="author-block">
+                    Nu-Fang Xiao</a><sup>1,4</sup>,</span>
+                    <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=tU0CwGwAAAAJ&hl=en" target="_blank">Zeng-Guang Hou</a><sup>1,2*</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup> Institute of Automation, Chinese Academy of Sciences<br>
+                      <sup>2</sup> University of Chinese Academy of Sciences<br>
+                      <sup>3</sup> Taiyuan University of Technology<br>
+                      <sup>4</sup> Hunan University of Science and Technology<br>
+                      <strong><em>arXiv</em> 2025</strong></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Authors</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Dxhuang-CASIA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Accurate vessel segmentation in X-ray angiograms is crucial for numerous clinical applications. However, the scarcity of annotated data presents a significant challenge, which has driven the adoption of self-supervised learning (SSL) methods such as masked image modeling (MIM) to leverage large-scale unlabeled data for learning transferable representations. Unfortunately, conventional MIM often fails to capture vascular anatomy because of the severe class imbalance between vessel and background pixels, leading to weak vascular representations. To address this, we introduce <strong>Vas</strong>cular anat<strong>o</strong>my-aware <strong>M</strong>asked <strong>I</strong>mage <strong>M</strong>odeling (<strong>VasoMIM</strong>), a novel MIM framework tailored for X-ray angiograms that explicitly incorporates anatomical knowledge into the pre-training process. Specifically, it comprises two complementary components: <em>anatomy-guided masking strategy</em> and <em>anatomical consistency loss</em>. The former preferentially masks vessel-containing patches to focus the model on reconstructing vessel-relevant regions. The latter enforces consistency in vascular semantics between the original and reconstructed images, thereby improving the discriminability of vascular representations. Empirically, VasoMIM achieves state-of-the-art performance across three datasets. These findings highlight its potential to facilitate X-ray angiogram analysis.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Overview -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Overview</h2>
+         <p>
+              <img src="./static/images/fig_motivation.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+              <strong>Comparison of conventional MIM and VasoMIM.</strong> 
+              (a) Conventional MIM masks patches based on <em>general rules</em> (<em>e.g.,</em> random masking) and learns to reconstruct patches via minimizing <em>pixel-level loss</em>. 
+              (b) VasoMIM guides patch masking with <em>vascular anatomy</em> and enforces <em>anatomical consistency</em> during reconstruction, enabling the model to learn richer vascular representations. Dark gray patches are vessel-relevant regions.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Overview -->
+
+
+<!-- Framework -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">VasoMIM Framework</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              <img src="./static/images/fig_framework.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+          </p>
+              <p>
+              <strong>Overall framework of VasoMIM.</strong> During pre-training, each X-ray angiogram is first processed by Frangi filter to extract its vascular anatomy. From this anatomy, we derive a patch-wise vascular anatomical distribution $f$ to guide the masking process. Finally, the model is optimized by minimizing $\mathcal{L}_{\rm train}$, which is a combination of standard pixel-wise reconstruction loss $\mathcal{L}_{\rm rec.}$ and the designed anatomical consistency loss $\mathcal{L}_{\rm cons.}$.              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Framework -->
+
+
+<!-- Main Results -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Main Results</h2>
+          <p>
+            <img src="./static/images/fig_sota_segmentation.jpeg" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+          </p>
+          <p>
+            <strong>Comparison of state-of-the-art methods on ARCADE, CAXF and XCAV.</strong>
+            All methods are reimplemented using their official codebases.
+            The best and second-best results are highlighted in
+            <span style="background-color: #ffcccc;">red</span>
+            and
+            <span style="background-color: #ffff99;">yellow</span>,
+            respectively.
+            Results are reported as “${\rm mean}\pm{\rm std}$” over three random seeds, except for Frangi filter.
+            <sup>†</sup> indicates that the model is specialized in medical imaging.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Main Results -->
+
+
+<!-- Visualization -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Visualization</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              <img src="./static/images/fig_sota_vis_appendix.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+          </p>
+          <p>
+            <strong>Quantitative results on ARCADE, CAXF, and XCAV.</strong> Our VasoMIM can achieve more precise vessel segmentation results with fewer false positives.
+          </p>
+          <p>
+              <img src="./static/images/fig_patch_vis.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+          </p>
+            <strong>Patch-wise masking ratio over the pre-training process,</strong> <em>i.e.,</em> $\frac{1}{E}\sum_{j=1}^E\mathbb{I}\left(\text{Patch $x_i$ is masked in epoch $j$}\right)$. For each case, we show the <em>input image</em>, <em>vascular anatomy</em> extracted by Frangi filter, and <em>patch-wise masking ratio</em> over pre-training. Red means higher ratio and blue indicates the opposite.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Visualization-->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>arXiv</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
